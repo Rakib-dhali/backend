@@ -1,13 +1,6 @@
-const express = require("express");
+const app = require("./src/app")
 
-const app = express();
 
-app.get("/", (req, res) => {
-  res.send("hellow world");
+app.listen(3000, () => {
+  console.log("server is live at 3000");
 });
-
-app.get("/about", (req, res) => {
-  res.send("about page");
-});
-
-app.listen(3000);
